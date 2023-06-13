@@ -3,7 +3,14 @@
 🔑 Login Page - Web Design <small>[web UI-UX]</small> is an small demo that I've implemented from the design of [Yasir Ahmad Noori](https://dribbble.com/yasirnoori) created. The information of this design will be found [here](https://dribbble.com/shots/15883367-Login-Page-Web-Design).
 
 ## Demo
-🚀 I deployed this project to Vercel. A live demo is available on [https://web-demo-coral.vercel.app/](https://web-demo-coral.vercel.app/).
+🚀 I deployed this project to Vercel. A live demo is available on [https://login-page-three-gamma.vercel.app/](https://login-page-three-gamma.vercel.app/).
+
+## Features
+### 🎉 Validation (User can't leave one of the fields empty)
+
+### 🎉 Responsive (Laptop - Tablet - Mobile)
+### 🎉 Notification (When user press Sign In buttton)
+### 🎉 Animation (Simple bubble animation in background)
 
 ## Getting Started
 
@@ -35,9 +42,4 @@ Production server will run on: http://localhost:4173/
 - 🪄 [Tippy.js for React](https://github.com/atomiks/tippyjs-react)
 
 
-## Features
-### 🎉 Validation (User can't leave one of the fields empty)
 
-### 🎉 Responsive (Laptop - Tablet - Mobile)
-### 🎉 Notification (When user press Sign In buttton)
-### 🎉 Animation (Simple bubble animation in background)
