@@ -1,0 +1,17 @@
+.button {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #fd6b67;
+  color: #fff2f1;
+  font-weight: 500;
+  font-size: 13px;
+  box-shadow: rgba(252, 48, 48, 0.4) 0px 18px 50px -10px;
+
+  &:hover {
+    cursor: pointer;
+    background: #ff5752;
+    box-shadow: rgba(252, 48, 48, 0.5) 0px 18px 50px -10px;
+  }
+}

@@ -1,0 +1,194 @@
+@import "@/constants/global.scss";
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #e6e7f0, #e4e8f0);
+  display: flex;
+
+  #content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    max-width: 900px;
+    max-height: 650px;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    background: rgba(255, 255, 255, 0.71);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    #big-image {
+      background-image: url("@/assets/login-image.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: auto;
+      height: 100%;
+      border-radius: 15px;
+    }
+
+    #login-form {
+      padding: 20px 30px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #register {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        text-align: right;
+        color: #3e3b48;
+        font-weight: 500;
+        font-size: 11px;
+
+        #link {
+          color: #4984cd;
+          text-decoration: none;
+        }
+      }
+
+      /* Only display in extra small screen */
+      #smallRegister {
+        display: none;
+        position: relative;
+        width: calc(100% + 30px);
+        height: 30px;
+      }
+
+      #main-form {
+        display: flex;
+        width: 100%;
+        max-width: 300px;
+        flex-direction: column;
+        align-items: center;
+
+        #title {
+          color: #292739;
+        }
+
+        #subtitle {
+          color: #565565;
+          margin: 15px 0 40px;
+          font-size: 13px;
+        }
+
+        #recover-pass {
+          text-decoration: none;
+          float: right;
+          color: #7a788a;
+          font-size: 12px;
+          margin: 20px 0 30px;
+
+          &:hover {
+            color: #fd6b67;
+            cursor: pointer;
+          }
+        }
+
+        #divider-container {
+          margin: 30px 0;
+          width: 100%;
+        }
+
+        #other-signin-buttons {
+          width: 85%;
+          display: flex;
+          justify-content: space-between;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@include responsive_medium {
+  #container {
+    #content {
+      width: 60%;
+      grid-template-columns: 1fr;
+
+      #login-form {
+        width: 100%;
+      }
+
+      #big-image {
+        display: none;
+      }
+    }
+  }
+}
+
+@include responsive_small {
+  #container {
+    #content {
+      width: 80%;
+      grid-template-columns: 1fr;
+
+      #login-form {
+        width: 100%;
+        padding: 5px;
+
+        #main-form {
+          max-width: 300px;
+        }
+      }
+
+      #big-image {
+        display: none;
+      }
+    }
+  }
+}
+
+@include responsive_extraSmall {
+  #container {
+    #content {
+      width: 100%;
+      grid-template-columns: 1fr;
+      background: transparent;
+      box-shadow: none;
+      border: none;
+
+      #login-form {
+        width: 100%;
+        padding: 0;
+
+        .register {
+          display: none;
+        }
+
+        #main-form {
+          max-width: unset;
+          width: 100%;
+
+          #smallRegister {
+            display: block;
+          }
+        }
+      }
+
+      #big-image {
+        display: none;
+      }
+    }
+    .bubble {
+      display: none;
+    }
+  }
+}
+
+@include responsive_removeBubble {
+  .bubble {
+    display: none;
+  }
+}

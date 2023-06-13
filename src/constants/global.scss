@@ -1,0 +1,34 @@
+.h-15 {
+  height: 15px;
+  width: 100%;
+  background-color: transparent;
+}
+
+$res_extraSmall: "only screen and (max-width: 422px)";
+$res_small: "only screen and (min-width: 423px) and (max-width: 573px)";
+$res_medium: "only screen and (min-width: 574px) and (max-width: 870px)";
+$res_removeBubble: "only screen and (max-width: 807px)";
+
+@mixin responsive_extraSmall() {
+  @media #{$res_extraSmall} {
+    @content;
+  }
+}
+
+@mixin responsive_small() {
+  @media #{$res_small} {
+    @content;
+  }
+}
+
+@mixin responsive_medium() {
+  @media #{$res_medium} {
+    @content;
+  }
+}
+
+@mixin responsive_removeBubble() {
+  @media #{$res_removeBubble} {
+    @content;
+  }
+}
